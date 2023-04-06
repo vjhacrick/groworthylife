@@ -58,7 +58,7 @@ def LogIn(request):
                 return redirect('login')
             login(request, user)
             messages.success(request, 'Successfully logged in')
-            return redirect('home')
+            return redirect('avatar')
     except Exception as e:
         print(e)
         messages.error(request, str(e))

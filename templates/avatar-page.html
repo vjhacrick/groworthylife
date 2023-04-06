@@ -1,43 +1,31 @@
-<!DOCTYPE html>
-<html>
-   
-    <head>
-        <title>
-            Login-GroWorthylife
-        </title>
-        <link rel="shortcut icon" href="images/favicon.jpeg" type="image/x-icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="avatar-page.css">    
-        <body>
-           <div class="container">
-            
-                
-                
-            
-            <div class="content">
-                <img src="images/avatar.png" class="logo">
-                <br>
-                <a href="Sign-in.html">
-                    <button type="button">Hey Buddy! I am your Avatar <br>Click to Launch</button>
-                </a>
-                
-           
-            </div>
-            <div class="hero">
-                
-            
-            <div class="text-box">
-                <p>HESITATION IS DEFEAT</p>
-                <br>
-                <h1>GroWorthylife</h1>
-                <br>
-                <h3>A PLATFORM TO BE PRODUCTIVE & BUILD YOURSELF</h3>
-            </div>
+{% extends 'base.html' %}
+{% load static %}
 
-           </div>
-        
-            <center>
-            </head>
-        </body>
-</html>
+{% block title %}
+    Accounts | GroWorthylife
+{% endblock title %}
+
+{% block stylesheet_linking %}
+    <link rel="stylesheet" href="{% static 'css/avatar-page.css' %}">
+{% endblock stylesheet_linking %}
+
+{% block content %}
+<div class="container">
+    <div class="content">
+        <!-- <img src="images/avatar.png" class="logo"> -->
+        <img src="{% static 'image/avatar.png' %}" class="logo">
+        <br>
+        <a href="{% url 'home' %}">
+            <button type="button">Hey {{name}} ! I am your Avatar <br>Click to Launch</button>
+        </a>
+    </div>
+    <div class="hero">
+        <div class="text-box">
+            <p>HESITATION IS DEFEAT</p>
+            <br>
+            <h1>GroWorthylife</h1>
+            <br>
+            <h3>A PLATFORM TO BE PRODUCTIVE & BUILD YOURSELF</h3>
+        </div>
+    </div>
+{% endblock content %}

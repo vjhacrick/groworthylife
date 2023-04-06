@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from authentication.models import CustomerModel
 from .models import *
 
 context = {}
@@ -51,3 +52,13 @@ def chapterPage(request, subject_id):
     except Exception as e:
         print(e)
     return render(request, "academics-chapter.html", context)
+
+
+def avatarPage(request):
+    try:
+        user = CustomerModel.objects.get(email=request.user.email)
+        context["name"] = user.name
+    except Exception as e:
+        print(e)
+    return render(request, "avatar-page.html", context)
+        

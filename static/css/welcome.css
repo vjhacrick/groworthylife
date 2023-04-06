@@ -6,6 +6,7 @@
 body {
     background-image:url("/static/image/background.jpg");
     background-size: cover;
+    background-position: center;
 }
 .hero{
     width: 100%;

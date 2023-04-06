@@ -5,7 +5,7 @@
 }
 body {
     background-image:url("/static/image/background.jpg");
-    background-size: cover;
+    background-size:cover;
     background-position: center;
 }
 .hero{
@@ -18,7 +18,7 @@ body {
     /* overflow: hidden; */
 }
 .logo{
-    width: 150px;
+    width: 200px;
     cursor: pointer;
 }
 .navbar{

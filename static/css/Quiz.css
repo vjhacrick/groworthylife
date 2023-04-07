@@ -6,7 +6,7 @@
   }
   body {
     height: 100vh;
-    background: url(Images/background.jpg);
+    background: url("/static/image/background.jpg");
   }
   .start-screen,
   .score-container {

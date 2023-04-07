@@ -66,3 +66,7 @@ def avatarPage(request):
 def helpPage(request):
     return render(request, "Help-support.html", context)
 
+
+def quizPage(request):
+    return render(request, "Quiz.html", context)
+

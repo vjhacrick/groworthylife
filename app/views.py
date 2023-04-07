@@ -61,4 +61,8 @@ def avatarPage(request):
     except Exception as e:
         print(e)
     return render(request, "avatar-page.html", context)
-        
+
+
+def helpPage(request):
+    return render(request, "Help-support.html", context)
+

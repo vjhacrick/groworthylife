@@ -2,17 +2,16 @@
 {% load static %}
 
 {% block title %}
-    Accounts | GroWorthylife
+Avatar | GroWorthylife
 {% endblock title %}
 
 {% block stylesheet_linking %}
-    <link rel="stylesheet" href="{% static 'css/avatar-page.css' %}">
+<link rel="stylesheet" href="{% static 'css/avatar-page.css' %}">
 {% endblock stylesheet_linking %}
 
 {% block content %}
 <div class="container">
     <div class="content">
-        <!-- <img src="images/avatar.png" class="logo"> -->
         <img src="{% static 'image/avatar.png' %}" class="logo">
         <br>
         <a href="{% url 'home' %}">
@@ -28,4 +27,4 @@
             <h3>A PLATFORM TO BE PRODUCTIVE & BUILD YOURSELF</h3>
         </div>
     </div>
-{% endblock content %}
+    {% endblock content %}

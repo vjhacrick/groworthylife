@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block title %}
-    Home | GroWorthylife
+Home | GroWorthylife
 {% endblock title %}
 
 {% block stylesheet_linking %}
-    <link rel="stylesheet" href="{% static 'css/home-page.css' %}">
+<link rel="stylesheet" href="{% static 'css/home-page.css' %}">
 {% endblock stylesheet_linking %}
 
 {% block content %}
@@ -15,9 +15,9 @@
         <img src="{% static 'image/logomain.png' %}" class="logo">
         <ul>
             <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'home' %}">Avatar</a></li>
+            <li><a href="{% url 'avatar' %}">Avatar</a></li>
             <li><a href="{% url 'home' %}">Timer</a></li>
-            <li><a href="{% url 'home' %}">Help & Support</a></li>
+            <li><a href="{% url 'help' %}">Help & Support</a></li>
         </ul>
     </div>
     <div class="content">
